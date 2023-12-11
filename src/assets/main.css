@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  background: 0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 700px;
+  margin: 40px auto;
+}
+
+.container form textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  flex-grow: 1;
+  font-size: 18px;
+  resize: none;
+  height: 70px !important;
+}
+
+.container form textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.container form .btn.add {
+  background: green;
+}
+
+.container form .btn.edit {
+  background: gold;
+}
+
+.container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  margin: 40px auto 0;
+}
+
+.container ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 850px;
+}
+
+.container ul li p {
+  font-size: 20px;
+  text-align: left;
+  width: 700px;
+  height: 70px;
+  overflow-y: scroll;
+}
+
+/* width */
+.container ul li p::-webkit-scrollbar {
+  display: none;
+}
+
+.container ul li p.long::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+}
+
+/* Track */
+.container ul li p.long::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.container ul li p.long::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+.container ul li p.long::-webkit-scrollbar-thumb:hover {
+  background: gold;
+}
+
+.container ul li .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.container ul li .btn.del {
+  background: red;
+}
+
+.container ul li .btn.edit {
+  background: gold;
+}
+
+.container h3 {
+  margin-top: 40px;
+  font-size: 25px;
+  text-decoration: underline;
+}
